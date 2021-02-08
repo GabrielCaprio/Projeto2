@@ -1,0 +1,145 @@
+body {
+  background: rgb(30, 30, 40);
+  margin: 0%;
+  margin-top: 75px;
+  color: #CC6666;
+}
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+.footer{
+  margin: auto;
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  background-color:#CC6666;
+  color: black;
+  text-align: center;
+  height: 84px;
+}
+.authentication{
+  background-color: rgb(30, 30, 40);
+  text-align: center;
+  margin: auto;
+  line-height: 1.5;
+  width: 550px;
+  height: 480px;
+  border: 5px solid;
+  border-color: #cc6666;
+  color: #CC6666;
+  margin-top: 75px;
+  border-radius: 10px;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -90px; 
+}
+
+.authentication:after {
+  content: "";
+  display: block;
+  height: 90px;
+}
+
+.btRegistra{
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 60%;
+  box-sizing: border-box;
+  outline: 0;
+}
+.btRegistra:hover{
+  background: #CC4949;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #CC6666;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: rgb(30, 30, 40);
+  color: white;
+}
+/* css form para pegar dados */
+input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+input:focus {
+  border: 2px solid #CC4949;
+}
+
+[type="button"] {
+  width: 100%;
+  background: #CC6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="button"]:hover {
+  background: #CC4949;
+}
+
+h1,h2,p {
+  text-align: center;
+}
+table{
+  width: 98%;
+  text-align: center;
+  margin-left: 6px;
+  border: 3px solid #CC4949;
+}
+
+td{
+  border: 1px solid #CC4949;
+  padding: 8px 20px;
+}
+
+
+.resetPass{
+  display: none;
+}

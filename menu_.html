@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Auntenticação</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>   
+
+    <link href="styles/style.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts/env.js"></script>
+    <script type="text/javascript" src="scripts/dbScript.js"></script>
+    <style>
+        .lista{
+            background-color: rgb(30, 30, 40);
+            text-align: center;
+            margin: auto;
+            line-height: 1.5;
+            width: 760px;
+            height: 880px;
+            border: 5px solid;
+            border-color: #cc6666;
+            color: #CC6666;
+            margin-top: 75px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="menu_.html">Listar Problemas</a>
+        <a href="cadas_problema.html">Cadastrar Problema</a>
+        <a href="editar_problema.html">Editar Problema</a>
+    </header>
+    <div class="lista">
+        <h2>Lista Problemas Do Usuario</h2>
+        <p id="errorMessage"></p>
+        <button class="btRegistra" onclick="listProblemasUser( event )">Listar</button>
+        <table class="table">
+        </table>
+    </div>
+</body>
+
+</html>

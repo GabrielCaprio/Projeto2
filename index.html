@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Auntenticação</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <link href="styles/style.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts/env.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/dbScript.js"></script>
+    
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html">Home</a>
+    </header>
+    <div class="authentication">
+
+        <section id="userAuthentication">
+            <h1>Login</h1>
+            <form>
+                <input type="email" id="email2" placeholder="Email" name="email" required>
+                <input type="password" id="password2" placeholder="Senha">
+                <input type="submit" value="Login" class="btRegistra" onclick="authenticateUser(event);" />
+            </form>
+        </section>
+        <button class="btRegistra" onclick="location.href='registrar.html'">Registrar-se</button>
+        <div class="resetPass">
+            <section id="ResetPassword">
+                <h2>Redefiniçao de senha</h2>
+                <form>
+                    <input type="email" id="email3" placeholder="Email" required>
+
+                    <input type="submit" class="btRegistra" onclick="resetPassword(event);" />
+                </form>
+            </section>
+        </div>
+        <button class="btRegistra" id='btn-div'>Redefinir Senha</button>
+
+        <div>
+            <h2>Lista Problemas</h2>
+            <p id="errorMessage"></p>
+            <button class="btRegistra" onclick="listProblemas( event )">Listar</button>
+            <table class="table">
+            </table>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById('btn-div');
+        var container = document.querySelector('.resetPass');
+        btn.addEventListener('click', function () {
+
+            if (container.style.display === 'block') {
+                container.style.display = 'none';
+            } else {
+                container.style.display = 'block';
+            }
+        });
+    </script>
+    <footer class="footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons"
+                style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Este trabalho está
+        licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons -
+            Atribuição 4.0 Internacional</a>.
+            <h3>Autor: Gabriel Caprio Silva Brito</h3>
+    
+    </footer>
+</body>
+</html>

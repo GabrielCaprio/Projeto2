@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Auntenticação</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>  
+    <link href="styles/style.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts/env.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html">Home</a>
+    </header>
+    <div class="authentication">
+        <p id="errorMessage"></p>
+        <p id="message"></p>
+        <section id="userCreation">
+            <h1>Registre-se</h1>
+            <form>
+                <input type="email" id="email1" placeholder="Email">
+                <input type="password" id="password1" placeholder="Senha">
+                <input type="password" id="confirmPassword1" placeholder="Confirme a Senha">
+
+                <input type="submit" onclick="createUser(event);">
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

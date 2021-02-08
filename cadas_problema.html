@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Auntenticação</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>   
+
+    <link href="styles/style.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts/env.js"></script>
+    <script type="text/javascript" src="scripts/dbScript.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="menu_.html">Listar Problemas</a>
+        <a href="cadas_problema.html">Cadastrar Problema</a>
+        <a href="editar_problema.html">Editar Problema</a>
+    </header>
+    <div class="authentication">
+            <h1>Relatar Problema</h1>
+            <form>
+                <input type="text" maxlength="100" id="local" placeholder="Local" required>
+                <input size="225" type="text" maxlength="500" id="desc" placeholder="Descrição" required>
+                <input type="file" id="foto" placeholder="Foto">
+
+                <input type="submit" onclick="addProblema( event );">
+            </form>
+    </div>
+</body>
+
+</html>
